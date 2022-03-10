@@ -4,7 +4,6 @@ const bod = document.querySelector("body");
 
 const resetButton = document.createElement("button");
 resetButton.textContent = "Reset";
-resetButton.classList.add('create');
 bod.appendChild(resetButton);
 let isDrawing = false;
 
@@ -73,48 +72,37 @@ function createEventListeners() {
   });
 }
 
-function createNewCanvas() {
-  const main = document.querySelector("main");
-  if (main) bod.removeChild(main);
+// function createNewCanvas(){
+//     const main = document.querySelector('main');
+//     if(main) bod.removeChild(main);
 
-// RESPONSIBLE FOR MESSAGE BOX
-  const divBlur = document.createElement('div');
-  divBlur.classList.add('message-container');
-  const div = document.createElement("div");
-  const numberInput = document.createElement("input");
-  numberInput.type = "number";
-  numberInput.max = 100;
-  numberInput.maxLength = 3;
-  const createButton = document.createElement("button");
-  createButton.textContent = "Create Grid";
+//     // createMain();
+//     const div = document.createElement('div');
+//     const numberInput = document.createElement('input');
+//     numberInput.type = 'number';
+//     numberInput.max = 100;
+//     const createButton = document.createElement('button');
+//     createButton.textContent = "Create Grid";
 
-  div.textContent = "How many squares per side do you want to create?";
-  div.appendChild(numberInput);
-  div.appendChild(createButton);
-    divBlur.appendChild(div);
+//     div.textContent = "How many squares per side do you want to create?";
+//     div.appendChild(numberInput);
+//     div.appendChild(createButton);
 
-  bod.appendChild(divBlur);
-  div.classList.add("message");
+//     bod.appendChild(div);
+//     div.classList.add('message');
 
-  createButton.addEventListener("click", () => {
-    let val = numberInput.value;
-    if(val <= 16) {
-        val = 16;
-    } else if(val >= 100) {
-        val = 100;
-    }
-
-    document.body.removeChild(divBlur);
-
-    createMain();
-    createContainer(val);
-    assignSize(val);
-    createEventListeners();
-  });
-}
+//     createButton.addEventListener('click', ()=> {
+//         createMain();
+//         createContainer();
+//         assignSize();
+//         createEventListeners();
+//     });
+// }
 
 // test
 createMain();
 createContainer();
 assignSize();
-createEventListeners();
+// createEventListeners();
+
+// createNewCanvas();

@@ -9,8 +9,10 @@ html {
 body {
     margin: 0;
     background: rgb(65, 65, 131);
-    text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -33,6 +35,22 @@ main {
     height: auto;
 }
 
+/* .container-1 {
+    background: red;
+}
+
+.container-2 {
+    background: blue;
+}
+
+.container-3 {
+    background: black;
+}
+
+.container-4 {
+    background: white;
+} */
+
 .sub-container {
     flex: 1;
     border: solid 1px black;
@@ -50,19 +68,10 @@ button {
     padding: 10px;
 }
 
-.create {
-    margin-top: 50px;
-}
-
-.create:hover {
-    background: black;
-    color: white;
-}
-
-.message {
+/* .message {
     width: 500px;
     height: 300px;
-    margin: 12% auto;
+    margin-top: 15%;
     background: white;
 
     display: flex;
@@ -84,13 +93,4 @@ input[type=number]{
     font-size: 1.3rem;
     text-align: center;
     width: 100px;
-}
-
-.message-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-}
+} */
