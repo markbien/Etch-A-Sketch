@@ -9,6 +9,7 @@ html {
 body {
     margin: 0;
     background: rgb(65, 65, 131);
+    text-align: center;
 }
 
 main {
@@ -16,15 +17,21 @@ main {
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+    margin: 25px auto;
+    background-color: white;
 }
 
 .container {
-    height: 200px;
+    height: 25px;
     display: flex;
 }
 
-.container-1 {
+.sub-container:hover {
+    background: black;
+    cursor: pointer;
+}
+
+/* .container-1 {
     background: red;
 }
 
@@ -38,9 +45,21 @@ main {
 
 .container-4 {
     background: white;
-}
+} */
 
 .sub-container {
     flex: 1;
-    border: solid 1px green;
+    border: solid 1px black;
+}
+
+.color {
+    background: black;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
 }
