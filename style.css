@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: rgb(65, 65, 131);
+}
+
+main {
+    border: solid 3px black;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.container {
+    height: 200px;
+    display: flex;
+}
+
+.container-1 {
+    background: red;
+}
+
+.container-2 {
+    background: blue;
+}
+
+.container-3 {
+    background: black;
+}
+
+.container-4 {
+    background: white;
+}
+
+.sub-container {
+    flex: 1;
+    border: solid 1px green;
+}
