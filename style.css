@@ -14,21 +14,22 @@ body {
 
 main {
     border: solid 3px black;
-    max-width: 800px;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     margin: 25px auto;
+    padding: 0;
     background-color: white;
 }
 
 .container {
-    height: 25px;
     display: flex;
 }
 
 .sub-container:hover {
     background: black;
     cursor: pointer;
+    height: auto;
 }
 
 /* .container-1 {
