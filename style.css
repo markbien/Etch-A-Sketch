@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sketch-container {
+    height: 500px;
+    width: 500px;
+
+    /* Align the .tile-row vertically */
+    display: flex;    
+    flex-direction: column;
+}
+
+.tile-row {
+    /* Now each of the tile-row container will take equal space in the column */
+    flex: 1;
+
+    /* This will cause the tiles to align horizontally */
+    display: flex;
+}
+
+.tile {
+    /* tiles will now take equal space horizontally */
+    flex: 1;
+
+    border: 1px solid black;
+}
