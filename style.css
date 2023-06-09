@@ -18,8 +18,8 @@ h1 {
 }
 
 #sketch-container {
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
 
     /* Align the .tile-row vertically */
     display: flex;    
