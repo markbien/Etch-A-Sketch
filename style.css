@@ -70,3 +70,7 @@ label {
 input[type="range"] {
     width: 500px;
 }
+
+.clicked {
+    background-color: #27374D;
+}
