@@ -71,6 +71,8 @@ input[type="range"] {
     width: 500px;
 }
 
-.clicked {
-    background-color: #27374D;
+button {
+    padding: 5px 25px;
+    font-family: 'Crete Round', serif;
+    font-size: 1.1rem;
 }

@@ -71,3 +71,7 @@ sketchContainer.addEventListener('mouseleave', function(){
 window.onload = createTiles(getDimensions());
 inputRange.addEventListener('change', updateSketchSize);
 
+document.querySelector('button').addEventListener('click', function(){
+  inputRange.value = 20;
+  updateSketchSize();
+});
